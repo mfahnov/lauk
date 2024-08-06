@@ -1,0 +1,545 @@
+*{
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.page{
+    background-color: #FFFFFF;
+    border-top: 5px #2352AD solid;
+}
+
+
+.header {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+.header_logo img {
+    height: 50px;
+    padding-right: 30px;
+    padding-left: 50px;
+}
+.search_bar {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+.search_bar input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+.search_bar button {
+    margin-left: -40px;
+    border: none;
+    background: none;
+    color: #2352AD;
+    font-size: 18px;
+    cursor: pointer;
+}
+.header_icon {
+    display: flex;
+    align-items: center;
+    padding-right: 50px;
+}
+.header_icon a {
+    text-decoration: none;
+    margin-left: 20px;
+    color: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header_icon a span{
+    margin-left: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.header_icon i{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    padding: 10px;
+    padding-left: 50px;
+    background-color: #2352AD;
+}
+.nav-1 a {
+    color: #FFFFFF;
+    float: left;
+    padding-left: 5px;
+    padding: 0px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+.nav-1 i{
+    padding-left: 5px;
+    vertical-align: -1px;
+}
+.nav-2 ul{
+    list-style: none;
+}
+.nav-3 a {
+    color: #FFFFFF;
+    text-decoration: none;
+    float: right;
+    padding-right: 10%;
+}
+.nav-3 i{
+    padding-left: 5px;
+    vertical-align: -1px;
+}
+
+
+
+.konten-1{
+    background-image: url(asset/bgkonten-1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: #FFFFFF;
+}
+.box-1-1{
+    float: left;
+    position: absolute;
+    top: 40%;
+    left: 8%;
+}
+.box-1-1 h4{
+    margin-bottom: 5px;
+    font-size: 1.36vw;
+}
+.garis_biru{
+    border-bottom: 3px #2352AD solid;
+    width: 20%;
+}
+.box-1-1 h1{
+    width: 80%;
+    margin-bottom: 0.5em;
+    font-size: 3vw;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #000000;
+}
+.box-1-1 p{
+    width: 50%;
+    color: #BCBCBC;
+    margin-bottom: 2em;
+    font-size: 1vw;
+}
+.box-1-1 button{
+    border-radius: 100px;
+    color: #FFFFFF;
+    border: none;
+    margin-right: 50px;
+    float: left;
+}
+.box-1-1 .btn1 button{
+    background-color: #2352AD;
+    padding: 15px;
+}
+.box-1-1 .btn1 button:hover{
+    border: 1px #FFFFFF solid;
+    background-color: transparent;
+}
+.box-1-1 .btn2 button{
+    padding: 15px 30px 15px 30px;
+    background-color: transparent;
+    border: 1px #FFFFFF solid;
+}
+.box-1-2{
+    display: grid;
+    justify-content: right;
+}
+
+
+
+.konten-2{
+    padding-top: 7%;
+    padding-left: 6%;
+    display: flex;
+}
+.box-2-1{
+    padding-right: 8%;
+}
+.box-2-1 .img-2-1{
+    padding-bottom: 1.5%;
+}
+.box-2-1 .img-2-2 .image1{
+    padding-right: 14px;
+}
+.box-2-2{
+    padding-top: 3%;
+}
+.box-2-2 h3{
+    font-size: 1.54vw;
+    font-weight: 550;
+    letter-spacing: 3px;
+    margin-bottom: 1em;
+}
+.box-2-2 h1{
+    font-size: 3vw;
+    width: 75%;
+    margin-bottom: 0.5em;
+}
+.box-2-2 p{
+    font-size: 1vw;
+    width: 50%;
+    margin-bottom: 1em;
+}
+.box-2-2 button{
+    background-color: #2352AD;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 25px 10px 25px;
+    font-size: 1vw;
+}
+
+
+
+.konten-3{
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+.box-3-1{
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+.box-3-1 h3{
+    font-size: 1.7vw;
+    letter-spacing: 3px;
+    font-weight: 550;
+}
+.box-3-1 h1{
+    font-size: 3vw;
+    margin-bottom: 1em;
+}
+.box-3-2{
+    display: flex;
+    justify-content: center;
+}
+.box-3-2 .widget-1 {
+    width: 250px;
+    height: 380px;
+    border-radius: 50px;
+    margin-left: 5em;
+    text-align: center;
+    box-shadow: 3px 6px 10px #000000;
+}
+.box-3-2 .widget-1 img{
+    width: 80%;
+}
+.box-3-2 .widget-1 h5{
+    font-size: 1.5vw;
+    margin-bottom: 1em;
+}
+.box-3-2 .widget-1 p{
+    font-size: 1vw;
+    width: 70%;
+    position: relative;
+    bottom: 1%;
+    left: 15%;
+
+}
+
+
+
+.konten-4{
+    padding: 100px;
+    background-image: url(asset/bgkonten-4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+}
+.konten-4 h1{
+    font-size: 3vw;
+    width: 50%;
+    padding-left: 25%;
+    margin-bottom: 0.5em;
+}
+.konten-4 h4{
+    font-size: 1vw;
+    font-weight: 550;
+    width: 45%;
+    padding-left: 28%;
+    margin-bottom: 1.5em;
+}
+.konten-4 button{
+    padding: 10px 30px 10px 30px;
+    background-color: transparent;
+    border: 1px #FFFFFF solid;
+    border-radius: 100px;
+    color: #FFFFFF;
+}
+
+
+
+.konten-5{
+    padding: 7% 0% 0% 1%;
+}
+.box-5-1{
+    padding: 0% 3% 10% 10%;
+    margin-bottom: 1em;
+    float: left;
+}
+.box-5-1 h3{
+    font-size: 1.6vw;
+    font-weight: 550;
+    letter-spacing: 2px;
+}
+.box-5-1 h2{
+    font-size: 3vw;
+}
+.garis_biru-5{
+    border-bottom: 3px #2352AD solid;
+    width: 33%;
+    margin-bottom: 5em;
+}
+.box-5-1 button{
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+    background-color: #2352AD;
+    border: 1px #FFFFFF solid;
+    color: #FFFFFF;
+}
+.box-5-2{
+    display: flex;
+}
+.box-5-2 .widget-2 {
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    padding-top: 5%;
+}
+.box-5-2 h4{
+    margin-top: -20%;
+    color: #FFFFFF;
+}
+
+
+
+.konten-6{
+    clear: both;
+    text-align: center;
+    background-image: url(asset/bgkonten-6.png);
+    padding: 5% 0% 5% 0%;
+}
+.konten-6 h3{
+    font-size: 1.6vw;
+    font-weight: 550;
+    letter-spacing: 2px;
+    color: #2352AD;
+    margin-bottom: 0.5em;
+}
+.konten-6 h2{
+    font-size: 3vw;
+    margin-bottom: 1.5em;
+}
+.konten-6 img {
+    height: 15vw;
+    width: 15vw;
+    margin-bottom: 1.5em;
+}
+.konten-6 h4{
+    font-size: 1.5vw;
+    margin-bottom: 0.5em;
+    color: #191825;
+}
+.konten-6 h4 span{
+    color: #2352AD;
+}
+.konten-6 p{
+    font-size: 1.5vw;
+    margin-bottom: 1.5em;
+}
+.konten-6 h5{
+    font-size: 1vw;
+    width: 40%;
+    font-weight: 400;
+    color: #191825;
+    text-align: center;
+    padding-left: 30%;
+}
+
+
+
+.konten-7{
+    max-width: 1000px;
+    border: 1px #191919 solid;
+    display: flex;
+    margin-left: 15%;
+    margin-top: 5%;
+    border-radius: 3px;
+}
+.box-7-1{
+    width: 100%;
+    padding: 10% 5%;
+    background-color: #191919;
+    color: #FFFFFF;
+}
+.box-7-1 h2{
+    font-size: 2vw;
+}
+.garis_biru-7{
+    border-bottom: 3px #2352AD solid;
+    width: 22%;
+    margin-bottom: 1.5em;
+}
+.box-7-1 p{
+    padding-bottom: 2%;
+}
+.box-7-1 button{
+    margin-top: 2em;
+    padding: 10px 30px 10px 30px;
+    border-radius: 100px;
+    background-color: #2352AD;
+    border: 1px #191919 solid;
+    color: #FFFFFF;
+}
+.box-7-2{
+    background-image: url(asset/bgkonten-7.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    padding: 10% 5%;
+    position: relative;
+}
+.box-7-2 h4{
+    color: #FFFFFF;
+    text-align: right;
+    position: absolute;
+    bottom: 70px;
+    right: 25px;
+    font-size: 1.06vw;
+}
+.box-7-2 h3{
+    color: #FFFFFF;
+    border-bottom: 3px #2352AD solid;
+    text-align: right;
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    font-size: 1.7vw;
+}
+
+
+
+.konten-8{
+    padding-top: 3%;
+    padding-left: 6%;
+}
+.box-8-1{
+    float: left;
+    padding: 10% 5%;
+}
+.box-8-1 h3{
+    font-size: 1.7vw;
+    font-weight: 550;
+    letter-spacing: 2px;
+    margin-bottom: 0.5vw;
+}
+.box-8-1 h2{
+    font-size: 3vw;
+    width: 40%;
+}
+.garis_biru-8{
+    border-bottom: 3px #2352AD solid;
+    width: 10%;
+    margin-bottom: 0.5em;
+}
+.box-8-1 p{
+    width: 43%;
+    padding-top: 1em;
+}
+.box-8-1 .par2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+.box-8-2 {
+    position: absolute;
+    left: 50%;
+    width: 40%;
+    padding-top: 12.5%;
+}
+
+
+
+.footer{
+    clear: both;
+    padding: 70px 30px 0px 90px;
+    display: flex;
+}
+.footer-1{
+    margin-right: -80px;
+}
+.footer-1 p{
+    padding: 1em 1em 5em 1.5em;
+    width: 70%;
+}
+.footer .line2{
+    padding-bottom: 4em;
+    padding-top: 7em;
+}
+.footer-2{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding-right: 2em;
+}
+.footer-2 h4{
+    padding-bottom: 2em;
+}
+.footer-2 a{
+    padding-bottom: 1em;
+    text-decoration: none;
+    color: #000000;
+}
+.footer-3{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-right: 2em;
+}
+.footer-3 h4{
+    padding-bottom: 2em;
+}
+.footer-3 a{
+    padding-bottom: 1em;
+    text-decoration: none;
+    color: #000000;
+}
+.footer-4{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+}
+.footer-4 h4{
+    padding-bottom: 2em;
+}
+.footer-4 a{
+    padding-bottom: 1em;
+    text-decoration: none;
+    color: #000000;
+}
+.footer-5 h3{
+    padding: 2em 0em 0.5em 0em;
+}
+.footer-5 a {
+    padding: 0%;
+}

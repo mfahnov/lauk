@@ -1,0 +1,2201 @@
+* {
+    margin: auto;
+    padding: auto;
+    font-family: 'poppins';
+    box-sizing: border-box;
+  }
+  
+  .header {
+    display: flex;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+    justify-content: center;
+  }
+  
+  #header-item {
+    flex-grow: 1;
+  }
+  
+  .header-item1 {
+    display: flex;
+    width: 10%;
+    margin-right: 2vh;
+}
+
+.header-item3 {
+    width: 50%; 
+    margin: auto 3vh;
+}
+
+.header-item4 {width: 15%;}
+  #logo img {
+    width:13vh;
+    height: auto;
+  }
+  
+  #text h1 {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  #text h3 {
+    font-size: 10px;
+    text-align: center;
+    font-weight: normal;
+  }
+  
+  .search-bar {
+    width: 100%;
+    margin-right: 0;
+  }
+  
+  .search-bar input {
+    text-align: left;
+    font-size: 16px;
+    padding: 8px;
+    width: 99%;
+    border-radius: 5px;
+    border-color: #8C8C8C;
+    border-style: double;
+  }
+  
+  .search-bar button {
+    border: none;
+    background-color: inherit;
+    margin-right: 0;
+    margin-left: -7%;
+  }
+  
+  .search-bar i {
+    font-size: 20px;
+    color: blue;
+  }
+  
+  .header-item4, .popupparent, .wishlistparent{
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+  }
+  
+  .popupparent, .wishlistparent{
+    position: relative;
+  }
+  
+  .menu-item {
+    text-decoration: none;
+    color: inherit;
+    text-align: center;
+    width: 60px;
+  }
+  
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-icon i {font-size: 24px;}
+  #Account i {font-size: 27px;}
+  
+  .menu-icon button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #2352AD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    margin-left: 50px;
+  }
+  
+  .navbar li {
+    margin-right: 40px;
+    position: relative;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .dropdown button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    width: 200px;
+  }
+  
+  .content {
+    background-color: white;
+    position: absolute;
+    box-shadow: 2px 2px 5px black;
+    z-index: 1000;
+    top: 41px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .content a {
+    margin: 5px auto;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .dropdown:hover .content, .dropdown:focus-within .content {
+    display: block;
+  }
+  
+  .dropdown a:hover {
+    background-color: hsl(0, 0%, 90%);
+  }
+  
+  .popup {
+    display: none;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1001;
+    left: -60px;
+    top: 197%;
+    width: 500%;
+  }
+  
+  .popup::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+  }
+  
+  .popup h5 {
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .popup form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .popup label {
+    font-size: 14px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .popup input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 98%;
+    margin-top: 15px;
+  }
+  
+  .forgot-password {
+    font-size: 12px;
+    color: blue;
+    text-align: right;
+    text-decoration: none;
+    margin-left: 165px;
+  }
+  
+  .popup button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 95%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .popup p {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  
+  .popup a {
+    color: #007BFF;
+    text-decoration: none;
+    display: flex;
+  }
+  
+  .password {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    margin: 0;
+    padding-right: 2px;
+    margin-top: 10px;
+  }
+  
+  .register {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    color: #8C8C8C;
+  }
+  
+  .popupparent:hover .popup, .popupparent:focus-within .popup {
+    display: block;
+  }
+  
+  
+  .wishlist {
+    display: none;
+    position: absolute;
+    transform: translateX(-50%);
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1001;
+    left: -60px;
+    top: 197%;
+    width: 500%;
+  }
+  
+  .menu-wishlist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  
+  .menu-wishlist img {
+    width: 15%;
+    margin-right: 10px;
+  }
+  
+  .text-wishlist {
+    width: 60%;
+  }
+  
+  .text-wishlist h4 {
+    width: 100%;
+    font-size: 0.9em;
+  }
+  
+  .text-wishlist h5 {
+    width: 100%;
+    font-size: 0.7em;
+    font-weight: normal;
+  }
+  
+  .text-wishlist span {
+    color: #007BFF;
+  }
+  
+  .wishlistparent:hover .wishlist, .wishlistparent:focus-within .wishlist {
+    display: block;
+  }
+  
+  .toko a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .toko img {
+    width: 20px;
+    height: 20px;
+    margin-right: 1ch;
+  }
+  
+  .toko span {
+    font-size: 14px;
+  }
+  
+  .slider {
+    position: relative;
+    width: 100%;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  
+  .slider img {
+    width: 100% !important;
+    height: auto;
+    object-fit: cover;
+    height: 400px;
+  }
+  
+  .bx-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+  }
+  
+  .bx-viewport {
+    width: 100% !important;
+  }
+  
+  .footer-banner {
+    background-color: #2352AD;
+    color: white;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .footer-banner p {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 7px;
+    width: 100%;
+  }
+  
+  .banner-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 85%;
+    border-radius: 8px;
+    margin-top: 30px;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 30px;
+  }
+  
+  .banner-container h3 {
+    font-size: 18px;
+  }
+  
+  .banner-container p {
+    font-size: 12px;
+  }
+  
+  .section-banner {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .section-banner img {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .text-banner {
+    text-align: left;
+  }
+  
+  .section-banner:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 25%;
+    bottom: 25%;
+    width: 1px;
+    background-color: #ccc;
+  }
+  
+  .cupang-container {
+    position: relative;
+    text-align: center;
+    width: 70%;
+  }
+  
+  .cupang-container img {
+    width: 100%;
+  }
+  
+  
+  .category-container {
+    width: 90%;
+    margin: 2% auto;
+    padding: 20px;
+  }
+  
+  .h2k {
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0;
+  }
+  
+  .h2k h2 {
+    margin-left: 0;
+    color: #333;
+    border-bottom: 2px solid #3366cc;
+    padding-bottom: 10px;
+    width: 30%;
+  }
+  
+  .category-grid {
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1ch;
+  }
+  
+  .category-item {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 6 - 1ch);
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  .category-item img {
+    width: 50px;
+    margin: 0 5px;
+  }
+  
+  .produk-container {
+    width: 90%;
+    padding: 2%;
+    margin-bottom: 0;
+  }
+  
+  .h2p {
+    color: #333;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 0px;
+  }
+  
+  .h2p h2 {
+    margin-left: 0;
+    color: #333;
+    border-bottom: 2px solid #3366cc;
+    padding-bottom: 10px;
+    width: 60%;
+  }
+  
+  .produk-container1 {
+    width:90%;
+    margin-top: 0;
+    padding: 2%;
+    padding-top: 0;
+    margin-bottom: 3%;
+  }
+  
+  .produk-grid {
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1ch;
+  }
+  
+  .produk-item {
+    display: flex;
+    border: 1px solid #e0e0e0;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: calc((100% / 6) - 1ch);
+    box-sizing: border-box;
+    border-radius: 13px;
+    flex-direction: column;
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  .produk-item img {
+    margin-top: 0;
+    padding-bottom: 3%;
+    height: 20ch !important;
+    width: 100%;
+    object-fit: cover;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+  }
+  
+  .produk-item span{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+    flex-shrink: 0;
+  }
+  
+  .produk-item span, .produk-item h4, .star {
+    text-align: left;
+    margin: 0;
+    margin-left: 5%;
+    padding: 0;
+  }
+  
+  .star {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .star p {
+    display: flex;
+    font-size: 0.7em;
+    padding-left: 7%;
+  }
+  
+  .star i {
+    color: #FAA819;
+  }
+  
+  .produk-item button {
+    margin: 6% auto;
+    width: 75%;
+    border-radius: 8px;
+    color: white;
+    background-color: #2352AD;
+    border: none;
+  }
+  
+  footer {
+    width: 100%;
+    position: relative;
+    height: 10%;
+    background-color: #fff;
+  }
+  
+  footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5%;
+    background: linear-gradient(to top, #EEEEEE, #FFFFFF);
+  }
+  
+  .footer-content {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding-top: 5%;
+  }
+  
+  .col1 {
+    width: 33%;
+  margin: auto 2%;
+  }
+  
+  .col2 {
+  display: block;
+  width: 13%;
+  margin: auto 2%;
+  text-decoration: none;
+  padding-left: 2%;
+  margin-top: 0;
+  }
+  
+  .col3 {
+  display: block;
+  width: 13%;
+  text-decoration: none;
+  margin-top: 0;
+  }
+  
+  .col4 {
+  display: block;
+  width: 33%;
+  text-decoration: none;
+  padding-left: 2%;
+  margin-top: 0;
+  }
+  
+  .grid-container2 {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 2%;
+  align-items: center;
+  }
+  
+  .grid-footer1 {
+  margin: 0;
+  align-items: center;
+  margin-right: 2%;
+  }
+  
+  .grid-footer1 img {
+  width: 80px;
+  text-align: center;
+  margin: 0;
+  }
+  
+  .grid-footer2 {
+  margin-left: 0;
+  }
+  
+  .grid-footer2 h1 {
+  margin-left: 0;
+  font-size: 2em;
+  }
+  
+  .grid-footer2 h3 {
+  margin-left: 0;
+  font-size: 1em;
+  font-weight: normal;
+  }
+  
+  .col2 a, .col3 a, .col4 a {
+  text-decoration: none;
+  display: block;
+  color: black;
+  padding-top: 5%;
+  font-size: 0.8em;
+  font-weight: normal;
+  }
+  
+  .col4 p {
+  padding-top: 4%;
+  font-size: 0.8em;
+  font-weight: normal;
+  }
+  
+  .col1 p {
+  padding-top: 3%;
+  font-size: 0.8em;
+  font-weight: normal;
+  }
+  
+  .follow {
+  margin-top: 5%;
+  }
+  
+  .icon {
+  display: flex;
+  width: 15%;
+  margin-left: 0;
+  }
+  
+  .copyright {
+  margin-left: 5%;
+  margin-top: 5%;
+  padding-bottom: 3%;
+  font-size: 0.8em;
+  font-weight: 500;
+  }
+
+  @media only screen and (max-width: 575px){
+    .header {
+        border-top: 8px solid #2352AD;
+        padding: 0.5% 2%;
+    }
+
+    #logo img {
+      width:7vh;
+      height: auto;
+    }
+
+    .header-item1 {width: 5%; margin-right: 0;}
+    .header-item2 {display: none;}
+    .header-item3 {
+      width: 55%; 
+    }
+
+    .search-bar {
+      width: 100%;
+      display: flex;
+      margin-left: 2%;
+    }
+
+    .header-item4 {width: 15%;}
+
+    .search-bar input, .search-bar button {
+      padding: 3px;
+    }
+
+    .search-bar input::placeholder {
+     font-size: 0.7em;
+    }
+
+    .search-bar input {width: 100%;}
+    .search-bar button {margin-left: -15%;}
+    #text h1{font-size: 1.2em;}
+    #text h3{font-size: 0.5em;}
+    .slider img {height: 25vh;}
+
+  .menu-item {
+    width: 20%;
+  }
+
+  .header-item4 {margin-left: 3%;}
+
+  .menu-icon button {
+    font-size: 0.1em;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .menu-icon span {display: none;}
+  .menu-icon i {font-size: 20px;}
+  #Account i {font-size: 23px;}
+  .navbar {
+    padding: 2px 1%;
+  }
+.navbar a, .navbar button, .toko img, .toko span {font-size: 0.5em; align-items: center; display: flex;}
+  .navbar ul {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+  
+  .navbar li {
+    margin: 0;
+    margin-right: 1ch;
+    align-items: center;
+  }
+
+  .toko, .toko a {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end !important;
+  }
+
+  .toko img {
+    width: 10px; height: auto;
+  }
+    
+      .content {
+        display: none;
+        top: 120%;
+        width: 220%;
+      }
+      
+      .content a {
+        margin: 1px auto;
+        padding-left: 7px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size:0.5em;
+      }
+      
+      .dropdown:hover .content, .dropdown:focus-within .content {
+        display: block;
+      }
+      
+      .dropdown a:hover {
+        background-color: hsl(0, 0%, 90%);
+      }
+    
+      .footer-banner p {
+        font-size: 0.42em;
+        font-weight: normal;
+        padding: 7px;
+        width: 100%;
+      }
+      
+      .banner-container {
+        width: 90%;
+        border: 1px solid #e0e0e0;
+        margin-top: 3%;
+        margin-bottom: 3%;
+      }
+
+      .section-banner {width: 100%; padding: 10px 6px;}
+      
+      .banner-container h3 {
+        font-size: 0.2em;
+      }
+      
+      .banner-container p {
+        font-size: 0.1em;
+      }
+      
+      .section-banner img {
+        width: 1.4em;
+      }
+      
+      .text-banner {
+        text-align: left;
+      }
+    
+      .cupang-container {
+        width: 70%;
+      }
+      
+      .cupang-container img {
+        width: 100%;
+      }
+      
+      .category-container {
+        width: 95%;
+      }
+      
+      .category-item {
+        width: calc(100% / 3 - 10px);
+        font-size: 0.6em;
+      }
+      
+      .category-item img {
+        width: 25px;
+        height: 25px;
+        margin: 0;
+      }
+      
+      .produk-container1 {
+        width: 90%;
+      }
+    
+      .h4p h4 {
+        font-size: 0.7em;
+        padding-bottom: 2%;
+      }
+      
+      .produk-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: start;
+      }
+      
+      .produk-item {
+        width: 100%;
+      margin-bottom: 10px;
+      padding-bottom: 2px;
+      }
+    
+      .produk-item img {
+        height: 15ch !important;
+        width: 100%;
+      }
+    
+      .produk-item span {
+        font-size: 0.7em;
+      }
+    
+      .h2k h2 {
+        padding-bottom: 0.7em;
+        width: 28%;
+        font-size: 0.7em;
+        font-weight: bold;
+      }
+    
+      .h2p h2 {
+        padding-bottom: 0.7em;
+        width: 90%;
+        font-size: 0.7em;
+        font-weight: bold;
+      }
+    
+      .produk-item h4{
+        font-size: 0.7em;
+      }
+    
+      .star p {
+        display: flex;
+        font-size: 0.5em;
+        padding-left: 7%;
+      }
+    
+      .star i {
+        font-size: 0.7em;
+      }
+    
+      .produk-item button {
+        margin: 5% auto;
+        width: 70%;
+        border: none;
+        font-size: 0.7em;
+      }
+    
+        .icon i, .icon a{
+          font-size: 1em;
+        }
+
+        .popup {
+          width: 900%;
+          padding: 10px;
+          left: -45%;
+          top: 200%;
+        }
+        
+        .popup h5 {
+          margin-bottom: 5px;
+          font-weight: 500;
+          font-size: 0.7em;
+        }
+        
+        .popup label {
+          font-size: 0.5em;
+        }
+        
+        .popup input {
+          padding: 3px;
+          width: 98%;
+          margin-top: 10px;
+        }
+        
+        .forgot-password {
+          font-size: 0.5em;
+          margin-left: 40%;
+        }
+        
+        .popup button {
+          padding: 5px;
+          width: 95%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 0.5em;
+        }
+        
+        .popup p {
+          margin-top: 5px;
+          font-size: 0.5em;
+          width: 95%;
+        }
+
+        .register a {margin-left: 2px;}
+        
+        .password {
+          padding-right: 2px;
+          margin-top: 10px;
+        }
+
+        .footer-content {
+          flex-direction: column;
+          align-items: center;
+          padding-top: 15%;
+        }
+        
+        .col1, .col2, .col3, .col4 {
+          width: 80%;
+          text-align: left;
+          margin: 10px 0;
+        }
+      
+        .col2, .col3, .col4 {
+          padding-left: 2%;
+        }
+      
+        .grid-footer1 img {
+          width: 50px;
+          }
+          
+        .grid-footer2 h1 {
+          font-size: 1em;
+        }
+          
+          .grid-footer2 h3 {
+          font-size: 0.3em;
+          font-weight: 500;
+          }
+          
+          .col2 a, .col3 a, .col4 a {
+          font-size: 0.6em;
+          }
+      
+          .col2 h4, .col3 h4, .col4 h4 {
+          font-size: 0.7em;
+          }
+          
+          .col4 p {
+          font-size: 0.6em;
+          }
+          
+          .col1 p {
+          font-size: 0.6em;
+          }  
+      
+          .icon i, .icon a{
+            font-size: 1em;
+          }      
+  }
+  
+  @media only screen and (min-width: 576px) and (max-width: 767px)  {
+    .header {
+        border-top: 8px solid #2352AD;
+        padding: 0.5% 2%;
+    }
+
+    #logo img {
+      width:13vh;
+      height: auto;
+    }
+
+    .header-item1 {width: 0.05%; margin-right: 0;}
+    .header-item2 {display: none;}
+    .header-item3 {
+      width: 40%; 
+      margin-left:0;
+      margin-right: 1%;
+    }
+
+    .search-bar {
+      width: 100%;
+      display: flex;
+    }
+
+    .search-bar input, .search-bar button {
+      padding: 3px;
+    }
+
+    .search-bar input::placeholder {
+     font-size: 0.8em;
+    }
+
+    .search-bar input {width: 100%;}
+    .search-bar button {margin-left: -12%;}
+    #text h1{font-size: 1.2em;}
+    #text h3{font-size: 0.5em;}
+    .slider img {height: 55vh;}
+    
+    .menu-item button span {font-size: 0.7em; display: block;}
+    .menu-item button {padding: auto 0;}
+    .menu-icon i {font-size: 20px;}
+    #Account i {font-size: 23px;}
+    .navbar {
+        padding: 5px 1%;
+      }
+      .navbar ul {
+        width: 100%;
+        margin: 0;
+      }
+      
+      .navbar li {
+        margin: 0;
+        margin-right: 2ch;
+      }
+
+      .navbar a, .navbar button, .toko span {font-size: 0.75em;}
+
+      .toko, .toko a {
+        text-align: right;
+      }
+
+      .toko a {
+        margin-left: 5ch;
+      }
+    
+      .content {
+        display: none;
+        top: 150%;
+        width: 220%;
+      }
+      
+      .content a {
+        margin: 1px auto;
+        padding-left: 7px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size:0.7em;
+      }
+      
+      .dropdown:hover .content, .dropdown:focus-within .content {
+        display: block;
+      }
+      
+      .dropdown a:hover {
+        background-color: hsl(0, 0%, 90%);
+      }
+    
+      .footer-banner p {
+        font-size: 0.65em;
+        font-weight: normal;
+        padding: 7px;
+        width: 100%;
+      }
+      
+      .banner-container {
+        width: 90%;
+        border: 1px solid #e0e0e0;
+        margin-top: 3%;
+        margin-bottom: 3%;
+      }
+
+      .section-banner {width: 100%; padding: 20px 6px;}
+      
+      .banner-container h3 {
+        font-size: 0.495em;
+      }
+      
+      .banner-container p {
+        font-size: 0.4em;
+      }
+      
+      .section-banner img {
+        width: 1.9em;
+      }
+      
+      .text-banner {
+        text-align: left;
+      }
+    
+      .cupang-container {
+        width: 70%;
+      }
+      
+      .cupang-container img {
+        width: 100%;
+      }
+      
+      .category-container {
+        width: 95%;
+      }
+      
+      .category-item {
+        width: calc(100% / 4 - 10px);
+        font-size: 0.7em;
+      }
+      
+      .category-item img {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+      }
+      
+      .produk-container1 {
+        width: 90%;
+      }
+    
+      .h4p h4 {
+        font-size: 0.8em;
+        padding-bottom: 2%;
+      }
+      
+      .produk-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        justify-content: start;
+      }
+      
+      .produk-item {
+        width: 100%;
+      margin-bottom: 10px;
+      padding-bottom: 2px;
+      }
+    
+      .produk-item img {
+        height: 15ch !important;
+        width: 100%;
+      }
+    
+      .produk-item span {
+        font-size: 0.7em;
+      }
+    
+      .h2k h2 {
+        padding-bottom: 0.8em;
+        width: 28%;
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+    
+      .h2p h2 {
+        padding-bottom: 0.8em;
+        width: 90%;
+        font-size: 1.1em;
+        font-weight: bold;
+      }
+    
+      .produk-item h4{
+        font-size: 0.7em;
+      }
+    
+      .star p {
+        display: flex;
+        font-size: 0.5em;
+        padding-left: 7%;
+      }
+    
+      .star i {
+        font-size: 0.7em;
+      }
+    
+      .produk-item button {
+        margin: 5% auto;
+        width: 70%;
+        border: none;
+        font-size: 0.7em;
+      }
+    
+        .icon i, .icon a{
+          font-size: 1em;
+        }
+
+        .popup {
+            width: 400%;
+          padding: 10px;
+          left: -45%;
+          top: 200%;
+        }
+        
+        .popup h5 {
+          margin-bottom: 5px;
+          font-weight: 500;
+          font-size: 0.9em;
+        }
+        
+        .popup label {
+          font-size: 0.7em;
+        }
+        
+        .popup input {
+          padding: 3px;
+          width: 98%;
+          margin-top: 10px;
+        }
+        
+        .forgot-password {
+          font-size: 0.7em;
+          margin-left: 30%;
+        }
+        
+        .popup button {
+          padding: 5px;
+          width: 95%;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          font-size: 0.7em;
+        }
+        
+        .popup p {
+          margin-top: 5px;
+          font-size: 0.6em;
+          width: 95%;
+          justify-content: center;
+        }
+
+        .register a {margin-left: 2px;}
+        
+        .password {
+          padding-right: 2px;
+          margin-top: 10px;
+        }
+
+        .footer-content {
+          flex-direction: column;
+          align-items: center;
+          padding-top: 15%;
+        }
+        
+        .col1, .col2, .col3, .col4 {
+          width: 80%;
+          text-align: left;
+          margin: 10px 0;
+        }
+      
+        .col2, .col3, .col4 {
+          padding-left: 2%;
+        }
+      
+        .grid-footer1 img {
+          width: 50px;
+          }
+          
+        .grid-footer2 h1 {
+          font-size: 1em;
+        }
+          
+          .grid-footer2 h3 {
+          font-size: 0.3em;
+          font-weight: 500;
+          }
+          
+          .col2 a, .col3 a, .col4 a {
+          font-size: 0.7em;
+          }
+      
+          .col2 h4, .col3 h4, .colh4 a {
+          font-size: 0.8em;
+          }
+          
+          .col4 p {
+          font-size: 0.7em;
+          }
+          
+          .col1 p {
+          font-size: 0.7em;
+          }  
+      
+          .icon i, .icon a{
+            font-size: 1em;
+          }      
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 991px)  {
+    .header {
+        border-top: 7px solid #2352AD;
+        padding: 0.5% 2%;
+    }
+
+    #logo img {
+      width:12vh;
+      height: auto;
+    }
+    .header-item1 {width: 7%;}
+    .header-item3 {width: 43%; 
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+
+    .search-bar {width: 100%;
+      display: flex;
+    }
+    .search-bar input {width: 100%;}
+    .search-bar button {margin-left: -10%;}
+    #text h1{font-size: 1em;}
+    #text h3{font-size: 0.3em;}
+    .slider img {height: 55vh;}
+    .menu-item button {font-size: 0.7em;}
+    .navbar {
+        padding: 5px 2%;
+      }
+      .navbar ul {
+        width: 100%;
+        margin: 0;
+      }
+      
+      .navbar li {
+        margin: 0;
+        margin-right: 2ch;
+      }
+
+      .navbar a, .navbar button, .toko span {font-size: 0.75em;}
+
+      .toko, .toko a {
+        text-align: right;
+      }
+
+      .toko a {
+        margin-left: 30ch;
+      }
+    
+      .content {
+        display: none;
+        top: 150%;
+        width: 220%;
+      }
+      
+      .content a {
+        margin: 1px auto;
+        padding-left: 7px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size:0.7em;
+      }
+      
+      .dropdown:hover .content, .dropdown:focus-within .content {
+        display: block;
+      }
+      
+      .dropdown a:hover {
+        background-color: hsl(0, 0%, 90%);
+      }
+    
+      .footer-banner p {
+        font-size: 0.8em;
+        font-weight: normal;
+        padding: 7px;
+        width: 100%;
+      }
+      
+      .banner-container {
+        width: 90%;
+        border: 1px solid #e0e0e0;
+        margin-top: 3%;
+        margin-bottom: 3%;
+      }
+
+      .section-banner {width: 100%; padding: 20px 6px;}
+      
+      .banner-container h3 {
+        font-size: 0.7em;
+      }
+      
+      .banner-container p {
+        font-size: 0.45em;
+      }
+      
+      .section-banner img {
+        width: 2.1em;
+      }
+      
+      .text-banner {
+        text-align: left;
+      }
+    
+      .cupang-container {
+        width: 70%;
+      }
+      
+      .cupang-container img {
+        width: 100%;
+      }
+      
+      .category-container {
+        width: 95%;
+      }
+      
+      .category-item {
+        width: calc(100% / 4 - 10px);
+        font-size: 0.7em;
+      }
+      
+      .category-item img {
+        width: 30px;
+        height: 30px;
+        margin: 0;
+      }
+      
+      .produk-container1 {
+        width: 90%;
+      }
+    
+      .h4p h4 {
+        font-size: 0.8em;
+        padding-bottom: 2%;
+      }
+      
+      .produk-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+        justify-content: start;
+      }
+      
+      .produk-item {
+        width: 100%;
+      margin-bottom: 10px;
+      padding-bottom: 2px;
+      }
+    
+      .produk-item img {
+        height: 15ch !important;
+        width: 100%;
+      }
+    
+      .produk-item span {
+        font-size: 0.8em;
+      }
+    
+      .h2k h2 {
+        padding-bottom: 0.9em;
+        width: 28%;
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+    
+      .h2p h2 {
+        padding-bottom: 0.9em;
+        width: 90%;
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+    
+      .produk-item h4{
+        font-size: 0.7em;
+      }
+    
+      .star p {
+        display: flex;
+        font-size: 0.5em;
+        padding-left: 7%;
+      }
+    
+      .star i {
+        font-size: 0.7em;
+      }
+    
+      .produk-item button {
+        margin: 5% auto;
+        width: 70%;
+        border: none;
+        font-size: 0.7em;
+      }
+    
+        .icon i, .icon a{
+          font-size: 1em;
+        }
+
+        .popup {
+          width: 500%;
+        padding: 10px;
+        left: -45%;
+        top: 170%;
+      }
+      
+      .popup h5 {
+        margin-bottom: 5px;
+        font-weight: 500;
+        font-size: 1em;
+      }
+      
+      .popup label {
+        font-size: 0.8em;
+      }
+      
+      .popup input {
+        padding: 5px;
+        width: 98%;
+        margin-top: 10px;
+      }
+      
+      .forgot-password {
+        font-size: 0.8em;
+        margin-left: 30%;
+      }
+      
+      .popup button {
+        padding: 5px;
+        width: 95%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 0.7em;
+      }
+
+      .register p {justify-content: center; margin: 0;}
+      
+      .popup p {
+        margin-top: 5px;
+        font-size: 0.7em;
+        width: 95%;
+        margin-left: 4%;
+      }
+
+      .register a {margin-left: 6px;}
+      
+      .password {
+        padding-right: 2px;
+        margin-top: 10px;
+      }
+
+      footer{width: 97%;}
+
+      .grid-footer1 img {width: 12vh;}
+
+      .grid-footer2 h1{font-size: 1.1em;}
+      .grid-footer2 h3{font-size: 0.45em;}
+      .col2,.col3,.col4 h4, .follow{font-size: 0.65em;}
+      .col4{padding-left: 5%;}
+
+      .col4 p, .col1 p {font-size: 0.6em;}
+      .col3 a, .col2 a {font-size: 0.7;}
+      .icon a, .icon i {padding: 15%;}
+
+  }
+
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .header {
+        border-top: 8px solid #2352AD;
+        padding: 0.5% 2%;
+    }
+    #logo img {
+      width:12vh;
+      height: auto;
+    }
+    #text h1{font-size: 1.35em;}
+    #text h3{font-size: 0.5em;}
+    .slider img {height: 70vh;}
+    .navbar {
+        padding: 7px 3%;
+      }
+    .navbar a, .navbar button, .toko img, .toko span {font-size: 0.9em;}
+      .navbar ul {
+        width: 100%;
+        margin: 0;
+      }
+      
+      .navbar li {
+        margin: 0;
+        margin-right: 3ch;
+      }
+
+      .toko, .toko a {
+        text-align: right;
+      }
+    
+      .content {
+        display: none;
+        top: 150%;
+        width: 220%;
+      }
+      
+      .content a {
+        margin: 1px auto;
+        padding-left: 7px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size:0.7em;
+      }
+      
+      .dropdown:hover .content, .dropdown:focus-within .content {
+        display: block;
+      }
+      
+      .dropdown a:hover {
+        background-color: hsl(0, 0%, 90%);
+      }
+    
+      .footer-banner p {
+        font-size: 0.9em;
+        font-weight: normal;
+        padding: 7px;
+        width: 100%;
+      }
+      
+      .banner-container {
+        width: 85%;
+        border: 1px solid #e0e0e0;
+        margin-top: 3%;
+        margin-bottom: 3%;
+      }
+      
+      .banner-container h3 {
+        font-size: 0.8em;
+      }
+      
+      .banner-container p {
+        font-size: 0.52em;
+      }
+      
+      .section-banner img {
+        width: 2.5em;
+        margin-right: 8px;
+      }
+      
+      .text-banner {
+        text-align: left;
+      }
+    
+      .cupang-container {
+        width: 70%;
+      }
+      
+      .cupang-container img {
+        width: 100%;
+      }
+      
+      .category-container {
+        width: 95%;
+      }
+      
+      .category-item {
+        width: calc(100% / 6 - 10px);
+        font-size: 0.9em;
+      }
+      
+      .category-item img {
+        width: 35px;
+        height: 35px;
+        margin: 0;
+      }
+      
+      .produk-container1 {
+        width: 90%;
+      }
+    
+      .h4p h4 {
+        font-size: 1em;
+        padding-bottom: 2%;
+      }
+      
+      .produk-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        justify-content: start;
+      }
+      
+      .produk-item {
+        width: 100%;
+      margin-bottom: 10px;
+      padding-bottom: 2px;
+      }
+    
+      .produk-item img {
+        height: 15ch !important;
+        width: 100%;
+      }
+    
+      .produk-item span {
+        font-size: 0.85em;
+      }
+    
+      .h2k h2 {
+        padding-bottom: 1em;
+        width: 28%;
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+    
+      .h2p h2 {
+        padding-bottom: 1em;
+        width: 90%;
+        font-size: 1.3em;
+        font-weight: bold;
+      }
+    
+      .produk-item h4{
+        font-size: 0.8em;
+      }
+    
+      .star p {
+        display: flex;
+        font-size: 0.6em;
+        padding-left: 7%;
+      }
+    
+      .star i {
+        font-size: 0.8em;
+      }
+    
+      .produk-item button {
+        margin: 5% auto;
+        width: 70%;
+        border: none;
+        font-size: 0.8em;
+      }
+    
+        .icon i, .icon a{
+          font-size: 1em;
+        }
+
+        .popup {
+            width: 600%;
+        }
+
+        .popup label, .popup p, .popup button{font-size: 0.7em;}
+        .popup h5{font-size: 1em;}
+
+        footer{width: 97%;}
+
+        .grid-footer2 h1{font-size: 1.5em;}
+        .grid-footer2 h3{font-size: 0.6em;}
+        .col2,.col3,.col4 h4, .follow{font-size: 0.85em;}
+        .col4{padding-left: 5%;}
+
+        .col4 p, .col3 a, .col2 a, .col1 p {font-size: 0.75em;}
+        .icon a, .icon i {padding: 15%;}
+    }    
+
+  @media only screen and (min-width: 1200px) and (max-width: 1300px){
+    .header {
+        border-top: 8px solid #2352AD;
+        padding: 0.5% 2%; 
+    }
+
+    #logo img {
+      width:10vh;
+      height: auto;
+    }
+    .slider img {height: 70vh;}
+    #text h1{font-size: 1.8em;}
+    #text h3{font-size: 0.7em;}
+    .navbar {
+        padding: 8px 3%;
+      }
+    .navbar a, .navbar button, .toko img, .toko span {font-size: 1em;}
+      .navbar ul {
+        width: 100%;
+        margin: 0;
+      }
+      
+      .navbar li {
+        margin: 0;
+        margin-right: 3ch;
+      }
+
+      .toko, .toko a {
+        text-align: right;
+        margin-left: 20ch;
+      }
+    
+      .content {
+        display: none;
+        top: 150%;
+        width: 300%;
+      }
+      
+      .content a {
+        margin: 1px auto;
+        padding-left: 7px;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        font-size:1em;
+      }
+      
+      .dropdown:hover .content, .dropdown:focus-within .content {
+        display: block;
+      }
+      
+      .dropdown a:hover {
+        background-color: hsl(0, 0%, 90%);
+      }
+    
+      .footer-banner p {
+        font-size: 1em;
+        font-weight: normal;
+        padding: 8px;
+        width: 100%;
+      }
+      
+      .banner-container {
+        width: 85%;
+        border: 1px solid #e0e0e0;
+        margin-top: 3%;
+        margin-bottom: 3%;
+      }
+      
+      .banner-container h3 {
+        font-size: 0.9em;
+      }
+      
+      .banner-container p {
+        font-size: 0.66em;
+      }
+      
+      .section-banner {
+        padding: 2em;
+      }
+      
+      .section-banner img {
+        width: 3em;
+        margin-right: 8px;
+      }
+      
+      .text-banner {
+        text-align: left;
+      }
+    
+      .cupang-container {
+        width: 70%;
+      }
+      
+      .cupang-container img {
+        width: 100%;
+      }
+      
+    
+      .category-container {
+        width: 95%;
+      }
+      
+      .category-item {
+        width: calc(100% / 6 - 10PX);
+        font-size: 1em;
+      }
+      
+      .category-item img {
+        width: 40px;
+        height: 40px;
+        margin: 0;
+      }
+      
+      .produk-container1 {
+        width: 90%;
+      }
+    
+      .h4p h4 {
+        font-size: 1.3em;
+        padding-bottom: 2%;
+      }
+      
+      .produk-grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 10px;
+        justify-content: start;
+      }
+      
+      .produk-item {
+        width: 100%;
+      margin-bottom: 10px;
+      padding-bottom: 2px;
+      }
+    
+      .produk-item img {
+        height: 15ch !important;
+        width: 100%;
+      }
+    
+      .produk-item span {
+        font-size: 1em;
+      }
+    
+      .h2k h2 {
+        padding-bottom: 1em;
+        width: 28%;
+        font-size: 1.6em;
+        font-weight: bold;
+      }
+    
+      .h2p h2 {
+        padding-bottom: 1;
+        width: 90%;
+        font-size: 1.6em;
+        font-weight: bold;
+      }
+    
+      .produk-item h4{
+        font-size: 0.9em;
+      }
+    
+      .star p {
+        display: flex;
+        font-size: 0.7em;
+        padding-left: 7%;
+      }
+    
+      .star i {
+        font-size: 0.9em;
+      }
+    
+      .produk-item button {
+        margin: 5% auto;
+        width: 70%;
+        border: none;
+        font-size: 0.9em;
+      }
+    
+        .icon i, .icon a{
+          font-size: 1em;
+        }
+
+        .popup {
+            width: 650%;
+        }
+
+        .popup h5{
+            font-size: 1em;
+        }
+    }    
+
+    @media only screen and (min-width: 1301px){
+      .header {
+          border-top: 8px solid #2352AD;
+          padding: 0.5% 2%; 
+      }
+
+      .header-item3 {margin: auto 2%;}
+      .menu-item button {font-size: 1.1em;}
+
+      .menu-icon i {font-size: 30px;}
+     #Account i {font-size: 33px;}
+  
+      #logo img {
+        width:15vh;
+        height: auto;
+      }
+      .slider img {height: 70vh;}
+      #text h1{font-size: 1.8em;}
+      #text h3{font-size: 0.7em;}
+      .navbar {
+          padding: 8px 3%;
+        }
+      .navbar a, .navbar button, .toko img, .toko span {font-size: 1.1em;}
+        .navbar ul {
+          width: 100%;
+          margin: 0;
+        }
+        
+        .navbar li {
+          margin: 0;
+          margin-right: 3ch;
+        }
+  
+        .toko, .toko a {
+          text-align: right;
+          margin-left: 20ch;
+        }
+      
+        .content {
+          display: none;
+          top: 150%;
+          width: 300%;
+        }
+        
+        .content a {
+          margin: 1px auto;
+          padding-left: 7px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          font-size:1em;
+        }
+        
+        .dropdown:hover .content, .dropdown:focus-within .content {
+          display: block;
+        }
+        
+        .dropdown a:hover {
+          background-color: hsl(0, 0%, 90%);
+        }
+      
+        .footer-banner p {
+          font-size: 1.1em;
+          font-weight: normal;
+          padding: 8px;
+          width: 100%;
+        }
+        
+        .banner-container {
+          width: 85%;
+          border: 1px solid #e0e0e0;
+          margin-top: 3%;
+          margin-bottom: 3%;
+        }
+        
+        .banner-container h3 {
+          font-size: 1em;
+        }
+        
+        .banner-container p {
+          font-size: 0.66em;
+        }
+        
+        .section-banner {
+          padding: 2em;
+        }
+        
+        .section-banner img {
+          width: 3em;
+          margin-right: 8px;
+        }
+        
+        .text-banner {
+          text-align: left;
+        }
+      
+        .cupang-container {
+          width: 70%;
+        }
+        
+        .cupang-container img {
+          width: 100%;
+        }
+        
+      
+        .category-container {
+          width: 95%;
+        }
+        
+        .category-item {
+          width: calc(100% / 6 - 10PX);
+          font-size: 1em;
+        }
+        
+        .category-item img {
+          width: 40px;
+          height: 40px;
+          margin: 0;
+        }
+        
+        .produk-container1 {
+          width: 90%;
+        }
+      
+        .h4p h4 {
+          font-size: 1.3em;
+          padding-bottom: 2%;
+        }
+        
+        .produk-grid {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+          gap: 10px;
+          justify-content: start;
+        }
+        
+        .produk-item {
+          width: 100%;
+        margin-bottom: 10px;
+        padding-bottom: 2px;
+        }
+      
+        .produk-item img {
+          height: 15ch !important;
+          width: 100%;
+        }
+      
+        .produk-item span {
+          font-size: 1em;
+        }
+      
+        .h2k h2 {
+          padding-bottom: 1em;
+          width: 28%;
+          font-size: 1.6em;
+          font-weight: bold;
+        }
+      
+        .h2p h2 {
+          padding-bottom: 1;
+          width: 90%;
+          font-size: 1.6em;
+          font-weight: bold;
+        }
+      
+        .produk-item h4{
+          font-size: 0.9em;
+        }
+      
+        .star p {
+          display: flex;
+          font-size: 0.7em;
+          padding-left: 7%;
+        }
+      
+        .star i {
+          font-size: 0.9em;
+        }
+      
+        .produk-item button {
+          margin: 5% auto;
+          width: 70%;
+          border: none;
+          font-size: 0.9em;
+        }
+      
+          .icon i, .icon a{
+            font-size: 1em;
+          }
+  
+          .popup {
+              width: 650%;
+          }
+  
+          .popup h5{
+              font-size: 1em;
+          }
+      }  
